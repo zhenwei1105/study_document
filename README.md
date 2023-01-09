@@ -3,8 +3,8 @@
 ## 脚手架文件结构
 	node_modules
 	public
-		favicon.ico: 页签图标
-		index.html: 主页面
+    favicon.ico: 页签图标
+    index.html: 主页面
 	src
 		assets: 存放静态资源
 			logo.png
@@ -320,23 +320,23 @@ xxx.install = function (Vue, options) {
 ### 3.搭建Vuex环境
 1. 创建文件：`src/store/index.js`
 ``` javascript
-	import Vue from 'vue'
-	import Vuex from 'vuex'
-	
-	Vue.use(Vuex)
-	
-	//相应组件中的动作
-	const actions = {}
-	//操作数据(state)
-	const mutations = {}
-	//存储数据
-	const state = {}
-	
-	export default new Vuex.Store({
-		actions,
-		mutations,
-		state
-	})
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+//相应组件中的动作
+const actions = {}
+//操作数据(state)
+const mutations = {}
+//存储数据
+const state = {}
+
+export default new Vuex.Store({
+  actions,
+  mutations,
+  state
+})
 ```
 2. 在`main.js`中创建vm时传入`store`配置项
 ``` javascript
